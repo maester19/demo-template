@@ -4748,7 +4748,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-light .navbar-toggler-icon {
-    background-image: url("../images/logo/logoAC.jpg")
+    background-image: url("../images/logo/logoAC.png")
 }
 
 .navbar-light .navbar-text {
@@ -4794,7 +4794,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-dark .navbar-toggler-icon {
-    background-image: url("../images/logo/logoAC\ dark.jpg")
+    background-image: url("../images/logo/logoAC\ dark.png")
 }
 
 .navbar-dark .navbar-text {
