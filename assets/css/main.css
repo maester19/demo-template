@@ -2206,6 +2206,8 @@ ol {
 
 .features .single-feature {
   text-align: left;
+  text-align: justify;
+  height: 440px;
   padding: 35px;
   background-color: #f9f9f9;
   border-radius: 6px;
@@ -3037,4 +3039,10 @@ ol {
 .footer .footer-newsletter .newsletter-form .button .btn:hover {
   color: darkgreen;
   background-color: #fff;
+}
+
+/* style perso */
+
+#pub{
+  height:95%
 }
