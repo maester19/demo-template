@@ -1,0 +1,594 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+body{
+	background: #80808017;
+}
+
+header{
+	width: 100%;
+	height: 5em;
+	background: white;
+	
+	margin-bottom: 1em;
+}
+
+nav{
+
+	display: flex;
+	flex-direction: row;
+	
+	box-shadow: 2px 2px 2px 2px grey;
+	align-items: center;
+	position: fixed;
+	
+}
+nav h1{
+	font-size: 40px;
+}
+
+@media only screen and (min-width: 280px){
+	nav{
+		width:100%;
+		height: 6em;
+		background: white;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+	}
+	
+	.liste {
+		list-style: none;
+	}
+	.liste button{
+		
+		display: block;
+		width: 2em;
+		height: 2em;
+		background-color: green;
+		color: green;
+		margin-top: 1em;
+		
+	}
+	
+
+
+	.invisible{
+		
+		color: black;
+		list-style: none;
+		border: 1px solid white;
+		display: none;
+		
+	}
+	.invisible .fa{
+		margin-bottom: 6px;
+	}
+	.liste li{
+		font-size: 13px;
+		width: 8em;
+		height: 2em;
+		border-radius: 3px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items:center;
+
+
+	}
+	.liste .is-visible{
+		display: block;
+		width: 6em;
+		height: 5em;
+		
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-top: 2em;
+	}
+
+
+}
+
+/*==================================================gestion du responsive sur pc==================================================================*/
+
+
+@media only screen and (min-width: 1200px){
+	nav{
+		width:100%;
+		height: 5em;
+		background: white;
+		box-shadow: 2px 2px 2px 2px black;
+	}
+	.liste {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+
+
+	}
+	/*==============================================la class list contientles liens de navigation congtenu dans le nav=======================================================================*/
+
+
+	.liste ul {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		width: 19em;
+		justify-content: space-between;
+		
+	}
+
+	.liste li{
+		font-size: 13px;
+		width: 8em;
+		height: 5em;
+		border-radius: 3px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items:center;
+
+
+	}
+	 
+	 .liste button{
+	 	display: none;
+	 }
+	
+	/*======================================== la class actiif defini le cadre vert du lien  , =============================================================================*/
+
+	.actif{
+
+		background: #3ebb0c;
+		width: 8em;
+		height: 5em;
+		border-radius: 3px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items:center;
+	}
+
+	.actif:hover{
+		background: #3ebb0c;
+		width: 8em;
+		height: 5em;
+		border-radius: 3px;	
+	}
+	
+}
+
+
+
+.liste li:hover{
+	background: grey;
+		transition:  0.2s ;
+}
+
+
+
+/*=========================================la class recherche encadre la barre de recherche et le bouton qui permet l envoi du texte saisi============================================================================*/
+.recherche{
+	width: 20em;
+	height: 2.5em;
+	background: #3ebb0c;
+	border-radius: 22px;
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.recherche input{
+	height: 3em;
+	width: 19em;
+	background: white;
+	border: 1px solid grey;
+	border-top-left-radius:22px;
+	border-bottom-left-radius: 22px;
+	text-align: center;
+}
+.recherche button{
+	background: #3ebb0c;
+	border: 1px #3ebb0c;
+	border-radius:9px;
+}
+.recherche .fa{
+	margin-right: 1.5em;
+}
+
+/*===========================================Gestion du responsive sur mobil pour le corps==========================================================================*/
+
+@media only screen and (min-width: 280px)
+{
+	section{
+		display: flex;
+		flex-direction: column;
+	}
+	/*===================================== cadre1 est le  grand cadre qui contient l image et lestextex================================================================================*/
+	.cadre1{
+		width: 100%;
+		
+		text-align: center;
+		font-size: 25px;
+	}
+	
+	.cadre1 header{
+			background:url(../img/marcher.jpg);
+			width: 100%;
+			height: 10em;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+	
+	}
+	/*=====================================  les sous cadres contiennent les text et ils sont alignes================================================================================*/
+	.souscadre1{
+		display: flex;
+		flex-direction: column;
+		margin-left: 1em;
+		text-align: center;
+	}
+	
+		.souscadre2{
+		display: flex;
+		flex-direction: column;
+		margin-right: 3em;
+		text-align: center;
+	}
+	/*==================================== La class minicadre au survol du bouton  devient gris=================================================================================*/
+	.minicadre2{
+		background: white;
+		text-align: center;
+	}
+	.cadre a{
+	text-decoration: none;
+	color: black;
+	margin-bottom: 2px;
+	text-align: center;
+	font-size: 35px;
+}
+/*============================================= cadre contient les liens========================================================================*/
+.cadre{
+	
+	width: 100%;
+	height: 3em;
+	text-align: center;
+
+	
+}
+.cadre:hover{
+	background: grey;
+}
+	footer{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding-bottom: 1em;
+		text-align: center;
+		background: #080808;
+		color: white;
+	}
+	footer a {
+		
+		align-items: center;
+	}
+	hr{
+		width: 100%;
+		margin-top: 2px;
+		margin-bottom: 2px;
+
+	}
+	/*================================= aligner est le cadre qui contient les premiers elements du footer====================================================================================*/
+	.aligner{
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 6em;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+
+	}
+	/*================================= alignement3 est le cadre qui contient les second elements du footer====================================================================================*/
+
+	.alignement3{
+		width: 100%;
+		padding-bottom: 4px;
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 1em;
+		text-align: center;
+		align-items: center;
+		justify-content :center;
+
+	}
+		/*================================= alignement2 est le cadre qui contient les liens qui sont entre 2 tirets du footer====================================================================================*/
+
+	.alignement2{
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 1em;
+		text-align: center;
+		width: 40%;
+	}
+
+	.alignement2 a{
+	text-decoration: none;
+	color: white;
+	text-align: center;
+
+	}
+	.aligner a{
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+	justify-content: center;
+	}
+	.alignement{
+		display: flex;
+		flex-direction: row;
+		width: 11em;
+		justify-content: space-between;
+		
+		
+	}
+	.contour{
+	border: 1px solid #80808059; ;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 4em;
+	font-size: 20px;
+	width: 100%;
+	}
+
+}
+
+
+
+	/*================================= Gestion du responsive pour les pc====================================================================================*/
+
+
+
+@media only screen and (min-width: 1200px){
+	section{
+		margin-left: 6em;
+		display: flex;
+		flex-direction: row;
+		
+		
+	}
+	.cadre1{
+		font-size: 18px;
+
+		width: 60%;
+		border-radius: 6px;
+		background-color: white;
+		padding-bottom: .5em;
+		box-shadow: 2px 2px 2px grey;
+
+	}
+	.cadre1 header{
+			background:url(../img/marcher.jpg);
+			width: 100%;
+			height: 17em;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			border-radius: 6px;
+	}
+	.cadre1 h3{
+		font-size: 10px;
+		margin-bottom: 1em;
+		margin-right: 19em;
+	}
+	.minicadre2{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		
+	}
+	.alignement2 a{
+	text-decoration: none;
+	color: white;
+	margin-right: 5px;
+
+	}
+	.souscadre1{
+		display: flex;
+		flex-direction: column;
+		
+		width: 30%;
+	
+	}
+	
+		.souscadre2{
+		display: flex;
+		flex-direction: column;
+		width: 30%;
+
+	}
+	.cadre2{
+		width:27%;
+		padding-bottom: 1em;
+		display: flex;
+		flex-direction: column;
+		margin-left: 3em;
+		
+	}
+	.aligner{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 1em;
+	margin-bottom: 1em;
+
+	}
+	footer{
+	width: 100%;
+	height: 20em;
+	background: #080808;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	color: white;
+	padding-top: 1em;
+	margin-top: 2em;
+
+	}
+	hr{
+		position: center;
+		margin-top: 1em;
+		margin-left: 5em;
+	}
+	.aligner a{
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+	}
+	.alignement{
+		display: flex;
+		flex-direction: row;
+		width: 7em;
+		justify-content: space-between;
+		margin-left: 7em;
+	}
+	.alignement2{
+		display: flex;
+		flex-direction: row;
+		width: 40em;
+		margin-top: .5em;
+		
+	}
+
+	.alignement3{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.cadre a{
+	text-decoration: none;
+	color: black;
+	margin-bottom: 2px;
+	font-size: 18px;
+}
+	.cadre{
+	
+		width: 15em;
+		height: 3em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}	
+
+	footer{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding-bottom: 10em;
+		text-align: center;
+		background: #080808;
+		color: white;
+		padding-top: 1em;
+	}
+	footer a {
+		
+		align-items: center;
+	}
+	hr{
+		width: 100%;
+		margin-top: 2px;
+		margin-bottom: 2px;
+
+	}
+	.contour{
+	border: 1px solid #80808059; ;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	height: 4em;
+	font-size: 20px;
+	}
+	.cadre:hover{
+	background: grey;
+	}
+}
+
+
+
+.cadre1 h3{
+	font-size: 24px;
+	margin-bottom: 1em;
+}
+
+#liens{
+	margin-left: 6em;
+	margin-top: 2em;
+}
+
+#liens a{
+	text-decoration: none;
+	color: black;
+	margin-bottom: 10px;
+	
+}
+ 
+
+.carte3{
+	background: white;
+	width: 100%;
+	padding-bottom: 1em;
+	
+	border-radius: 6px}
+
+
+.ensemble{
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+
+}
+.ensemble .fa{
+	margin-right: 1em;
+}
+
+.LOGO{
+	margin-left: 3.5em;
+}
+.succed{
+	margin-top: 2em;
+	margin-left: 6em;
+}
+.succed h1{
+	margin-bottom: 10px;
+	font-size: 40px;
+}
+.succed h5{
+	font-size: 15px;
+}
+.succed h6{
+	font-size: 15px;
+}
+.succed input{
+	width: 9em;
+	background: green;
+	border-radius: 6px;
+	border: 1px solid green;
+}
+
+
+
+
+.cadrer{
+	height: 3em;
+}
